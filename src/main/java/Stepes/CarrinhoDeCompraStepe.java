@@ -7,9 +7,6 @@ import static FabricaDeDriver.DriverFactory.screenshotPage;
 
 public class CarrinhoDeCompraStepe {
 
-    private CarrinhoDeCompraStepe() {
-
-    }
 
     static DriverFactory driverFatctory;
 

@@ -16,7 +16,7 @@ Feature: Automatic WEB
     When preencho o campo Usuario "standard_user"
     And preencho o campo Senha "secret_sauce"
     And clico no btn Entra
-    When  selecionar primeio produto
+    When selecionar primeio produto
     And selecionar segundo produto
     Then conferir o carinho
 

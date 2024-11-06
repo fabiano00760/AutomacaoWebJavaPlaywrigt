@@ -5,6 +5,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import java.nio.file.Paths;
@@ -18,7 +19,7 @@ public class DriverFactory {
     private static Page.ScreenshotOptions screenshotOptions;
     private static Playwright playwright;
 
-    @BeforeAll
+    @Before
     public static void init() {
         // Inicializando o Playwright e configurando o navegador
         playwright = Playwright.create();
