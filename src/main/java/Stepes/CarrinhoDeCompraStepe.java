@@ -7,7 +7,6 @@ import static FabricaDeDriver.DriverFactory.screenshotPage;
 
 public class CarrinhoDeCompraStepe {
 
-
     static DriverFactory driverFatctory;
 
     @When("selecionar primeio produto")

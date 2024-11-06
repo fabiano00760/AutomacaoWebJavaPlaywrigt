@@ -2,12 +2,14 @@ package Stepes;
 
 import FabricaDeDriver.DriverFactory;
 import Pages.LoginPage;
+import com.microsoft.playwright.Page;
 import io.cucumber.java.en.*;
 
 import static FabricaDeDriver.DriverFactory.screenshotPage;
 
 
 public class LoginStep {
+
     static DriverFactory driverFatctory;
 
     Pages.LoginPage LoginPage;
@@ -44,6 +46,7 @@ public class LoginStep {
         LoginPage.clickLoginButton();
         System.out.println("Botão de login clicado.");
         screenshotPage("clico no btn Entra ");
+
     }
 
     @Then("entao login realizado com sucesso")
