@@ -53,18 +53,22 @@ public class DriverFactory {
     private static void setDriverOptions() {
         // Opções para o navegador, como o modo 'headless' e outras configurações
         BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
-                .setHeadless(true)  // Defina como 'true' para execução sem interface gráfica
-                .setSlowMo(300);    // Define o atraso de 1000ms (1 segundo) entre as ações
+                .setHeadless(false) // Defina como 'true' para execução sem interface gráfica
+                .setSlowMo(700);
+
     }
 
     private static void setBrowser() {
         // Inicializa o navegador com as opções definidas
-        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
     }
 
     private static void setPage() {
         // Cria uma nova página no navegador
         page = browser.newPage();
+        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
+                .setHeadless(false) // Defina como 'true' para execução sem interface gráfica
+                .setSlowMo(700);
     }
 
     private static void setScreenshotOptions() {
@@ -94,4 +98,5 @@ public class DriverFactory {
         String timestamp = LocalDateTime.now().format(formatter);
         return String.format("evidence/%s-%s.png", stepName, timestamp);
     }
+
 }

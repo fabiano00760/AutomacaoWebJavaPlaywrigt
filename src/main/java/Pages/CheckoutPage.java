@@ -4,6 +4,7 @@ import FabricaDeDriver.DriverFactory;
 import com.microsoft.playwright.Page;
 
 public class CheckoutPage {
+
    static DriverFactory driverFatctory;
 
     public static void telaYourCart() {

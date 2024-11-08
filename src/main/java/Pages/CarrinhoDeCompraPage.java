@@ -3,6 +3,7 @@ import FabricaDeDriver.DriverFactory;
 import com.microsoft.playwright.Page;
 
 public class CarrinhoDeCompraPage {
+
     static DriverFactory driverFatctory;
 
     public static void primeiroProduto() {
