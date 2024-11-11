@@ -5,7 +5,7 @@ import Pages.CarrinhoDeCompraPage;
 import io.cucumber.java.en.*;
 import static FabricaDeDriver.DriverFactory.screenshotPage;
 
-public class CarrinhoDeCompraStepe {
+public class CarrinhoDeCompraStep {
 
     static DriverFactory driverFatctory;
 

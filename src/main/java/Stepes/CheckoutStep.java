@@ -4,7 +4,7 @@ import io.cucumber.java.en.*;
 import Pages.CheckoutPage;
 import static FabricaDeDriver.DriverFactory.screenshotPage;
 
-public class CheckoutStepe {
+public class CheckoutStep {
 
     static DriverFactory driverFatctory;
 
