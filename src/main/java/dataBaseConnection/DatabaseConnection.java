@@ -1,4 +1,4 @@
-package org.FremeWork_Playwright.DatabaseConnection;
+package dataBaseConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -17,12 +17,12 @@ public class CarrinhoDeCompraPage {
         this.page = DriverFactory.getPage();
     }
 
-    // Método genérico para clicar em qualquer produto
+    // Metodo genérico para clicar em qualquer produto
     public void adicionarProdutoAoCarrinho(String xpathProduto) {
         page.locator(xpathProduto).click();
     }
 
-    // Métodos específicos para os produtos
+    // Metodos específicos para os produtos
     public void primeiroProduto() {
         adicionarProdutoAoCarrinho(primeiroProduto);
     }

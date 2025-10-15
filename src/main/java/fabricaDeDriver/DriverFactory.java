@@ -31,6 +31,7 @@ public class DriverFactory {
             System.err.println("Erro ao inicializar o Playwright: " + e.getMessage());
             e.printStackTrace(); // Opcional: imprime o stack trace completo
         }
+
     }
 
 
@@ -81,7 +82,7 @@ public class DriverFactory {
         screenshotOptions = new Page.ScreenshotOptions().setFullPage(true);
     }
 
-    // Métodos getter para acessar as instâncias de Browser e Page
+    // Metodos getter para acessar as instâncias de Browser e Page
     public static Browser getBrowser() {
         return browser;
     }
@@ -103,5 +104,8 @@ public class DriverFactory {
         String timestamp = LocalDateTime.now().format(formatter);
         return String.format("evidence/%s-%s.png", stepName, timestamp);
     }
+
+
+
 
 }
