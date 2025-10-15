@@ -62,7 +62,7 @@ Copiar código
   - test
     - java
       - runners                  # Classe de configuração para rodar os testes
-        - TestRunner.java        # Runner que configura o Cucumber para execução
+        - TestRunner.java        # runner que configura o Cucumber para execução
 
 
 Claro! Aqui está um modelo de documentação README.md para o seu projeto de automação web com Java, Cucumber e Playwright:
@@ -126,7 +126,7 @@ Copiar código
   - test
     - java
       - runners                  # Classe de configuração para rodar os testes
-        - TestRunner.java        # Runner que configura o Cucumber para execução
+        - TestRunner.java        # runner que configura o Cucumber para execução
 Descrição dos Arquivos
 1. Arquivos .feature (Gherkin)
 login.feature: Contém o cenário para testar o login na aplicação.
@@ -138,7 +138,7 @@ CartSteps.java: Contém os passos de automação para o cenário de carrinho de 
 CheckoutSteps.java: Contém os passos de automação para o cenário de checkout.
 3. Arquivo de Utilitário
 BrowserManager.java: Responsável por configurar o navegador Playwright e fornecer uma instância da página para os testes.
-4. Runner do Cucumber
+4. runner do Cucumber
 TestRunner.java: Classe principal que configura o Cucumber para rodar os testes. Aqui é onde as configurações do Cucumber (como localização dos arquivos .feature e dos steps) são definidas.
 
 Cenários de Teste
